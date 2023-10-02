@@ -64,8 +64,6 @@ header .main-nav ul li {
     list-style-type: none;
 }
 
-/******** Main ********/
-
 main {
     padding: 1em;
     display: flex;
@@ -74,23 +72,23 @@ main {
     line-height: 1.5;
 }
 
-main *, main > * {
-    /*
-    outline: 1px solid red;
-    */
-}
-
-main ul li {
+.sec-nav ul li {
     margin-left: 1em;
+    margin-top: 10px;
 }
 
-main ul li:not(:first-child) {
-    margin-top: 10px;
+.content > :not(:first-child) {
+    margin-top: 1em;
+
+}
+
+.content {
+    width: min(100%, 100ch);
+
 }
 
 .sec-nav {
     width: 30ch;
-
 }
 
 .sec-nav time:nth-child(n) {
@@ -102,15 +100,6 @@ main ul li:not(:first-child) {
 }
 
 
-.content > :not(:first-child) {
-    margin-top: 1em;
-
-}
-
-.content {
-    width: min(100%, 100ch);
-
-}
 
 /******** Media Queries ********/
 
